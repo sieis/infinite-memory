@@ -13,7 +13,7 @@ displayVerses = (data)=>{
                                 <p class="card-text" id="${i.location+"text"}">${i.verse}</p>
                             </div>
                             <div id="${i.location+"footer"}" class="card-footer text-center" style="display:none">
-                                <button id="${i.location+"btn"}" class="btn btn-primary">Toggle Verse</button>
+                                <button id="${i.location+"btn"}" class="btn btn-primary">Click to remove words</button>
                             </div>
                         </div>`
                         references.innerHTML += `<li id="${i.location}" class="btn btn-primary m-1 p-2">${i.location}</li>`
