@@ -2,6 +2,8 @@
 
 ## A web application to help memorize scripture.
 
+Here's the live version: https://infinite-memory.netlify.app/
+
 I built this as an exercise in vanilla Javascript, and as a tool for use in a group where we are memorizing scripture verses.
 
 It is straightforward: you may toggle verses on and off to highlight the cards where they are printed on the screen.
