@@ -8,16 +8,25 @@ displayVerses = (data) => {
     const references = document.querySelector(`.references`)
     let reset = document.querySelector('#reset')
     data.forEach(i => {
-        list.innerHTML += `<div id="${i.location + "verse"}" class="card my-2 mx-5">
+        list.innerHTML += `<div id="${i.location + "verse"}" class="card my-2 mx-5" style="display:none">
                             <div class="card-body">
                                 <h5 class="card-title">${i.location}</h5>
-                                <p class="card-text" id="${i.location + "text"}">${i.verse}</p>
+                                <p class="card-text" id="${i.location + "text"}" style ="display: none">${i.verse}</p>
+                                <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/${i.podcast}"></iframe>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="memorySample" class="form-label">Try to Type Verse</label>
+                                        <textarea name="textarea" cols="6" rows="6" class="form-control" id="${i.location+"memory"}"></textarea>
+                                    </div>
+                                </form>
+                                    <button id="${i.location+"check"}" class="btn btn-primary">Submit</button>
                             </div>
-                            <div id="${i.location + "footer"}" class="card-footer text-center" style="display:none">
-                                <button id="${i.location + "btn"}" class="btn btn-primary">Click to remove words</button>
+                            <div id="${i.location + "footer"}" class="card-footer text-center">
+                                <button id="${i.location + "btn"}" class="btn btn-primary">One Word at a Time</button>
+                                <button id="${i.location+"toggle"}" class="btn btn-primary">Whole Verse</button>
                             </div>
                         </div>`
-        references.innerHTML += `<li id="${i.location}" class="btn btn-primary m-1 p-2">${i.location}</li>`
+        references.innerHTML += `<li id="${i.location}" class="btn btn-primary btn-sm m-1 p-2">${i.location}</li>`
     });
     data.forEach(i => {
         // split into an array of words separated by spaces
@@ -31,12 +40,11 @@ displayVerses = (data) => {
         let b = document.getElementById(`${i.location + "btn"}`);
         let t = document.getElementById(`${i.location + "text"}`)
         // console.log(x, y, z, b, t)
-        x.onclick = changeBackground = () => {
-            y.classList.toggle("togglebackground");
-            if (z.style.display === "none") {
-                z.style.display = "block"
+        x.onclick = showCard = () => {
+            if (y.style.display === "none") {
+                y.style.display = "block"
             } else {
-                z.style.display = "none";
+                y.style.display = "none";
             }
         }
 
