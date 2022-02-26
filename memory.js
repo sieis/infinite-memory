@@ -9,7 +9,7 @@ displayVerses = (data) => {
     let reset = document.querySelector('#reset')
     data.forEach(i => {
         // change display back to none after editing
-        list.innerHTML += `<div id="${i.location + "verse"}" class="card m-5" style="display:none">
+        list.innerHTML += `<div id="${i.location + "verse"}" class="card" style="display:none">
                             <div class="card-body text-center">
                                 <h3 class="m-3 card-title">${i.location}</h3>
                                 <p class="m-5 fs-5 card-text" id="${i.location + "text"}" >${i.verse}</p>
@@ -20,7 +20,7 @@ displayVerses = (data) => {
                                 </div>
                                 <iframe width="88%" height="180" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/${i.podcast}"></iframe>
                                 <form>
-                                    <div class="mx-5 px-5 my-3">
+                                    <div class="px-5 my-3">
                                         <label for="memorySample" class="my-3 fs-4 form-label">Try to Type Verse</label>
                                         <textarea name="textarea" cols="6" rows="6" class="form-control" id="${i.location+"memory"}"></textarea>
                                     </div>
