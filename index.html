@@ -12,20 +12,38 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1 class="text-center m-5">Infinite Memory (beta)</h1>
-        
-        <div class="row">
-            <div class="col-12 col-md-2 sidebar">
-                <h4 class="fs-4 text-center">Toggle Verses</h4>
-                <ul class="list-unstyled m-2 references"></ul>
-                <div id="reset" class="btn btn-success mx-3">Reset All</div>
-            </div>
-            <div class="col-12 col-md-10">
-                <div class="cards"></div>
+    
+    <div class="container-fluid">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/img/undraw_solution_mindset_-34-bi.svg" alt="" width="150" height="150">
+            <h1 class="display-5 fw-bold">Infinite Memory (beta)</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Quickly review memory verses by reading text, listening to audio, hiding the text and practicing typing the verses.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button id="reset" type="button" class="btn btn-reset btn-lg px-4 gap-3">Reset All</button>
+                    <!-- <button  type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+                </div>
             </div>
         </div>
-    </div>
+        <div class="b-example-divider"></div>
+        
+        <div class="container-fluid py-5 px-5 text-center">
+            
+            <h2 class="text-center">Select Verse</h2>
+            <img class="d-block mx-auto mb-4" src="/img/undraw_select_re_3kbd.svg" alt="" width="150" height="150">
+              <ul class="list-unstyled m-2 references"></ul>
+            </div>
+              <div class="cards container-fluid"></div>
+          <!-- <div class="row py-5 px-3 my-5">
+              <div class="col-12 col-md-2 sidebar">
+                  <h4 class="fs-4 text-center">Select Verse</h4>
+                  <ul class="list-unstyled m-2 references"></ul>
+              </div>
+              <div class="col-12 col-md-10">
+                  <div class="cards"></div>
+              </div>
+          </div> -->
+        </div>
     <script src="/memory.js"></script>
 </body>
 
