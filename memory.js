@@ -9,7 +9,7 @@ displayVerses = (data) => {
     let reset = document.querySelector('#reset')
     data.forEach(i => {
         // change display back to none after editing
-        list.innerHTML += `<div id="${i.location + "verse"}" class="card m-5" style="display:block">
+        list.innerHTML += `<div id="${i.location + "verse"}" class="card m-5" style="display:none">
                             <div class="card-body text-center">
                                 <h3 class="m-3 card-title">${i.location}</h3>
                                 <p class="m-5 fs-5 card-text" id="${i.location + "text"}" >${i.verse}</p>
