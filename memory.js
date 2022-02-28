@@ -8,7 +8,6 @@ displayVerses = (data) => {
     const references = document.querySelector(`.references`)
     let reset = document.querySelector('#reset')
     data.forEach(i => {
-        // change display back to none after editing
         list.innerHTML += `<div id="${i.location + "verse"}" class="card" style="display:none">
                             <div class="card-body text-center">
                                 <h3 class="m-3 card-title">${i.location}</h3>
