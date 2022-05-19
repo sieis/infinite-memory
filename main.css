@@ -37,3 +37,6 @@
     background-color: #fd4c67;
     border-color:#fd4c67;
 }
+.max-wide{
+    max-width: 1100px;
+}
