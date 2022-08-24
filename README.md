@@ -1,6 +1,8 @@
-# Infinite Memory
+# :book: Infinite Memory | A scripture memory application
 
-## A web application to help memorize scripture.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b54feff-8161-4e71-a73f-26bcd8388249/deploy-status)](https://app.netlify.com/sites/infinite-memory/deploys)
+
+![Infinite Memory Twitter Card](https://github.com/sieis/infinite-memory/blob/main/img/infinite-twitter-card.jpg?raw=true)
 
 Here's the live version: https://infinite-memory.netlify.app/
 
@@ -20,8 +22,8 @@ Here's a launch blog I wrote about the motivation for and process of creating th
 
 1. Practice typing the verse in the form ```textarea```. Press the ```Check Typed Verse``` and the card will turn green if you got it correct or red if you missed something.
 
->Please note: in it's current version, you must type the punctation exactly as printed in order for the test to pass. Capitalization does not matter, but punctuation does.
+> Please note: in it's current version, you must type the punctation exactly as printed in order for the test to pass. Capitalization does not matter, but punctuation does.
 
->To reset the entire page, press the ```Reset All``` button at the very top or refresh the page.
+> To reset the entire page, press the ```Reset All``` button at the very top or refresh the page.
 
 ***
