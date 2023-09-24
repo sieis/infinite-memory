@@ -91,13 +91,6 @@ displayVerses = (data) => {
             typedVerse.value = ""
         }
 
-        // b.onclick=memorize=()=>{
-        //     if(t.style.display==="none"){
-        //         t.style.display="block";
-        //     }else{
-        //         t.style.display="none";
-        //     }
-        // }
     });
 
 }
